@@ -42,4 +42,12 @@ public class Cell {
     public void setPlayer(Player player) {
         this.player = player;
     }
+
+    public void display(){
+        if(cellStatus.equals(CellStatus.EMPTY)){
+            System.out.printf(" - |");
+        }else{
+            System.out.print(" "+ player.getSymbol().getaChar()+" |");
+        }
+    }
 }
